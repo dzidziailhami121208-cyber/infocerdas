@@ -1,0 +1,365 @@
+/* =========================
+   PENGATURAN DASAR
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    color: #263238;
+    line-height: 1.8;
+}
+
+a {
+    transition: 0.3s;
+}
+
+/* =========================
+   NAVIGASI
+========================= */
+header {
+    background: linear-gradient(135deg, #102d50, #1769aa);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 10;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    color: #ffcf40;
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ffcf40;
+}
+
+/* =========================
+   BANNER
+========================= */
+#home img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   PENCARIAN
+========================= */
+.pencarian {
+    max-width: 850px;
+    margin: 55px auto;
+    padding: 35px 25px;
+    text-align: center;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.pencarian h2 {
+    color: #123c69;
+    font-size: 29px;
+    margin-bottom: 8px;
+}
+
+.pencarian p {
+    color: #687782;
+    margin-bottom: 20px;
+}
+
+.pencarian input {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px 20px;
+    border: 2px solid #dce5ef;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+}
+
+.pencarian input:focus {
+    border-color: #1769aa;
+}
+
+/* =========================
+   KATEGORI
+========================= */
+.kategori {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.kategori h2,
+.artikel h2,
+.tentang h2,
+.kontak h2 {
+    color: #123c69;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.kategori-container {
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.kategori-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #263238;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+    border: 1px solid #e8edf3;
+    font-size: 42px;
+}
+
+.kategori-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.kategori-card h3 {
+    color: #123c69;
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+.kategori-card p {
+    font-size: 14px;
+    color: #687782;
+}
+
+/* =========================
+   ARTIKEL
+========================= */
+.artikel {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.subtitle {
+    color: #687782;
+    margin-bottom: 35px;
+}
+
+.artikel-container {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.artikel-card {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    text-align: left;
+    border: 1px solid #e8edf3;
+    transition: 0.3s;
+}
+
+.artikel-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.artikel-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.label-artikel {
+    display: inline-block;
+    background: #e7f1f8;
+    color: #1769aa;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.artikel-card h3 {
+    color: #123c69;
+    font-size: 22px;
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+.artikel-card p {
+    color: #56636d;
+    margin-bottom: 20px;
+}
+
+.artikel-card a {
+    color: #1673aa;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.artikel-card a:hover {
+    color: #ff9800;
+}
+
+#noResults {
+    margin-top: 25px;
+    color: #687782;
+}
+
+/* =========================
+   TENTANG
+========================= */
+.tentang {
+    background: #e7f1f8;
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.tentang p {
+    max-width: 750px;
+    margin: auto;
+    color: #4c5b68;
+}
+
+/* =========================
+   KONTAK
+========================= */
+.kontak {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.kontak p {
+    margin: 15px 0 25px;
+    color: #56636d;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffb703;
+    color: #17324d;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #ffd166;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #102d50;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #dce5ef;
+    margin: 5px 0;
+}
+
+/* =========================
+   TAMPILAN HP
+========================= */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .pencarian {
+        margin: 30px 15px;
+        padding: 25px 18px;
+    }
+
+    .pencarian h2 {
+        font-size: 23px;
+    }
+
+    .kategori-container,
+    .artikel-container {
+        grid-template-columns: 1fr;
+    }
+
+    .kategori,
+    .artikel {
+        padding: 45px 6%;
+    }
+
+    .kategori h2,
+    .artikel h2,
+    .tentang h2,
+    .kontak h2 {
+        font-size: 27px;
+    }
+
+    .artikel-card {
+        padding: 25px;
+    }
+}
